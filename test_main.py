@@ -7,7 +7,7 @@ import pytest
 
 import main
 
-SECRET = os.environ.get('TEST_JWT_SECRET')
+SECRET = os.environ.get('TEST_JWT_SECRET', 'abc123abc1234')
 TOKEN = os.environ.get('TEST_TOKEN')
 EMAIL = 'wolf@thedoor.com'
 PASSWORD = 'huff-puff'
