@@ -7,8 +7,8 @@ import pytest
 
 import main
 
-SECRET = 'TestSecret'
-TOKEN = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjEzMDY3OTAsIm5iZiI6MTU2MDA5NzE5MCwiZW1haWwiOiJ3b2xmQHRoZWRvb3IuY29tIn0.IpM4VMnqIgOoQeJxUbLT-cRcAjK41jronkVrqRLFmmk'
+SECRET = os.environ.get('TEST_JWT_SECRET')
+TOKEN = os.environ.get('TEST_TOKEN')
 EMAIL = 'wolf@thedoor.com'
 PASSWORD = 'huff-puff'
 
